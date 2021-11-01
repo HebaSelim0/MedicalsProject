@@ -1,0 +1,47 @@
+----------------** Doctor **--------------------------------------
+id , name ,gender,tel, email , image,appoitments , [Assistants] , veseta ,available schedule,total,[patients]
+
+-crud operations for all users [Assistants and patients ]
+
+register
+login
+logout
+add patients
+show all patients
+show single  patient Profile
+delete  patients
+update  patients
+booking appoitments
+
+show reports -history
+---------------** patient**-----------------------------------------
+id , name ,gender,tel, email , image,booking /booked appoitments , history , money paid
+
+register
+login
+logout
+show his profile
+update some fields 
+booking appoitment
+
+show report for his history
+
+
+---------------------------------------Extra----------------------
+** Admin 
+-crud op. for users , doctors and  assistances
+show reports 
+login
+logout
+----------------
+
+** Assistant
+register 
+login
+logout
+add Assistants
+show all Assistants
+show single  Assistant
+delete  Assistant
+update  fields for his profile 
+------------------
