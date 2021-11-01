@@ -1,0 +1,30 @@
+<p>doctor-login works!</p>
+
+<section  class="col-md-6 bg-light" style="margin-left: 300px;">
+  <br>
+  <h3 style="margin-left: 130px;">Doctor Login Form!</h3>
+<section class="col-md-6" style="margin-left: 130px; margin-bottom: 60px;">
+<form [formGroup]="loginForm" (ngSubmit)="log_in()">
+    <div class="form-group " style="margin:10px;">
+      <label for="emailtxt">Email address</label>
+      <input type="email" class="form-control" id="emailtxt" aria-describedby="emailHelp" placeholder="Enter email" name="password" formControlName="email">
+      <div *ngIf="email?.invalid" class="alert alert-danger col-md-6">Invalid Email</div>
+    </div>
+    <div class="form-group " style="margin:10px;">
+      <label for="passtxt">Password</label>
+      <input type="password" class="form-control" id="passtxt" placeholder="Password" name="password" formControlName="password">
+      <div class="alert alert-danger my-3" *ngIf="password?.invalid && ( password?.dirty ||password?.touched)">
+        <p *ngIf="password?.errors?.pattern || password?.errors?.required"> * invalid password format (password must contain capital letter, small letter, number, specaial character and more than 8 characters)</p>
+      </div>
+    </div>
+    <div class="form-check " style="margin:10px;">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <button type="submit" class="btn btn-primary " style="margin:10px; margin-left: 130px;">Login</button>
+  </form>
+  <br>
+  <br>
+</section>
+
+</section>
+<br> <br>
